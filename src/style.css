@@ -21,3 +21,7 @@ p, input[type="text"] {
     --background: #F6F9FE;
     --dark: #424242;
 }
+
+body {
+    background-color: var(--background);
+}
