@@ -41,7 +41,7 @@ body {
     user-select: none;
 }
 
-.navbar>ul {
+.navbar ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -72,7 +72,7 @@ body {
 main {
     height: 80vh;
     margin: 0 3rem;
-    /* border: 2px solid rgb(180, 17, 17); */
+    border: 2px solid rgb(215, 9, 222);
 }
 
 .presentation {
@@ -118,7 +118,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
     user-select: none;
 }
 
@@ -156,9 +156,57 @@ main {
 .search-option #searchbar {
     font-size: 1.4rem;
     width: 450px;
+    max-width: 450px;
     border-radius: 5px;
     padding: 0px 10px;
 }
+
+.carousel {
+    border: 2px solid var(--dark);
+    width: 100%;
+    height: 400px;
+    margin-bottom: 6rem;
+    display: flex;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.carousel .item {
+    display: flex;
+    flex-direction: row;
+}
+
+.carousel .item .picture {
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid var(--dark);
+}
+
+.carousel section {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--dark);
+}
+
+.carousel section h3 {
+    font-size: 2rem;
+}
+
+/* .carousel section footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carousel section footer h5 {
+    font-size: 1.3rem;
+}
+
+.carousel section footer h5 time {
+    font-size: 1.2rem;
+} */
 
 body>footer {
     height: 15vh;
