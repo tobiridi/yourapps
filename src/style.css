@@ -6,6 +6,7 @@
     --bg-colored: #e86a6a;
     --bg: #F6F9FE;
     --dark: #424242;
+    --border-radius: 5px;
 }
 
 /* reset CSS */
@@ -24,6 +25,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: "Roboto", sans-serif;
 }
 
+/* CSS rules */
 body {
     background-color: var(--bg);
     display: flex;
@@ -66,13 +68,13 @@ body {
     color: #ffffff;
     background-color: var(--bg-colored);
     transition: 0.3s ease-out;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 main {
     height: 80vh;
     margin: 0 3rem;
-    border: 2px solid rgb(215, 9, 222);
+    /* border: 2px solid rgb(215, 9, 222); */
 }
 
 .presentation {
@@ -145,7 +147,7 @@ main {
     height: 10px;
     background-color: #ffffff;
     border-radius: 50%;
-    margin-left: 5px;
+    margin-left: var(--border-radius);
 }
 
 .search-option .tags .tag:hover {
@@ -157,7 +159,7 @@ main {
     font-size: 1.4rem;
     width: 450px;
     max-width: 450px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 0px 10px;
 }
 
@@ -167,7 +169,7 @@ main {
     height: 400px;
     margin-bottom: 6rem;
     display: flex;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     user-select: none;
 }
 
@@ -208,6 +210,61 @@ main {
     font-size: 1.2rem;
 } */
 
+.all-games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.all-games .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.all-games .game:hover h3 {
+    color: var(--primary);
+}
+
+.all-games .game img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: var(--border-radius);
+}
+
+.all-games .game section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: var(--dark);
+}
+
+.all-games .game section h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.all-games .game section .description {
+    overflow: hidden;
+}
+
+.all-games .game time {
+    font-size: 1.2rem;
+    text-align: end;
+    font-weight: 600;
+}
+
+.pagination {
+    border: 2px solid red;
+}
+
 body>footer {
     height: 15vh;
+    border: 2px solid rgb(162, 0, 255);
 }
