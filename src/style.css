@@ -17,8 +17,9 @@
     font-family: "Open Sans", sans-serif;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
+    color: #000000;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -216,6 +217,7 @@ main {
     grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
     width: 100%;
+    margin-bottom: 6rem;
 }
 
 .all-games .game {
@@ -250,10 +252,6 @@ main {
     font-weight: 500;
 }
 
-.all-games .game section .description {
-    overflow: hidden;
-}
-
 .all-games .game time {
     font-size: 1.2rem;
     text-align: end;
@@ -261,7 +259,22 @@ main {
 }
 
 .pagination {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+.pagination a, .pagination span {
+    padding: 10px;
+}
+
+.pagination a:hover {
+    border: 1px solid var(--dark);
+    border-radius: var(--border-radius);
 }
 
 body>footer {
