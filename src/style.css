@@ -177,7 +177,7 @@ main {
     display: flex;
     /* grow - shrink - basis */
     flex: 1 0 100%;
-    animation: slide 9s ease-in-out infinite;
+    animation: slide 11s ease-in-out infinite;
 }
 
 .carousel .item .picture {
@@ -301,19 +301,19 @@ body>footer {
 
 /* animations */
 @keyframes slide {
-    /* pause 2s */
-    /* transition 1s */
-    0%, 24% {
+    /* pause 2.4s */
+    /* transition 1.4s */
+    0%, 23% {
         transform: translateX(0%);
     }
-    36%, 60% {
+    33%, 53% {
         transform: translateX(-100%);
     }
-    72%, 96% {
+    63%, 83% {
         transform: translateX(-200%);
     }
-    100% {
-        transform: translateX(0%);
+    93%, 100% {
+        transform: translateX(-300%);
     }
     
 }
