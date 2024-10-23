@@ -153,11 +153,34 @@ main {
     opacity: 0.85;
 }
 
-.search-option #searchbar {
-    font-size: 1.4rem;
-    width: 450px;
+.searchbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg);
+    border: 2px solid var(--dark);
     border-radius: var(--border-radius);
-    padding: 0px 10px;
+    max-width: 100%;
+    width: 30%;
+}
+
+.searchbar-container ion-icon {
+    font-size: 24px;
+    background: transparent;
+    margin-left: 5px;
+}
+
+.search-option #searchbar {
+    font-size: 1.2rem;
+    border: none;
+    background: transparent;
+    padding: 5px;
+    width: 100%;
+}
+
+.search-option #searchbar:focus {
+    outline: none;
 }
 
 .carousel {
